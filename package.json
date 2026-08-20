@@ -1,29 +1,21 @@
 {
-    "name": "abap2ui5-layout-variant-management",
-    "private": true,
-    "version": "1.0.0",
-    "description": "abap2UI5 RFC Connector",
-    "scripts": {
-      "syfixes": "find . -type f -name '*.abap' -exec sed -i -e 's/ RAISE EXCEPTION TYPE cx_sy_itab_line_not_found/ ASSERT 1 = 0/g' {} + ",
-      "downport": "abaplint --fix .github/abaplint/abap_702.jsonc && npm run syfixes",
-      "rename": "abaplint .github/abaplint/rename.json --rename"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/abap2UI5-addons/layout-management.git"
-    },
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/abap2UI5-addons/layout-management.git"
-    },
-    "homepage": "https://github.com/abap2UI5-addons/layout-management#readme",
-    "devDependencies": {
-      "@abaplint/cli": "^2.115.2",
-      "@abaplint/database-sqlite": "^2.11.78",
-      "@abaplint/runtime": "^2.12.22",
-      "@abaplint/transpiler-cli": "^2.12.22"
-    },
-    "dependencies": {
-      "npm-check-updates": "^19.2.0"
-    }
+  "name": "abap2ui5-rfc-connector",
+  "private": true,
+  "version": "1.0.0",
+  "description": "abap2UI5 RFC Connector",
+  "scripts": {
+    "lint": "abaplint ./abaplint.jsonc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abap2UI5-addons/rfc-connector.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abap2UI5-addons/rfc-connector/issues"
+  },
+  "homepage": "https://github.com/abap2UI5-addons/rfc-connector#readme",
+  "devDependencies": {
+    "@abaplint/cli": "^2.115.2"
   }
+}
